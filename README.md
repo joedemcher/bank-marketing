@@ -58,3 +58,41 @@ A low Euribor rate might make borrowing cheaper, potentially reducing the appeal
 A high employment variation rate might indicate economic instability, which could influence financial decisions.
 
 ---
+
+Summary of Key Insights
+
+Numerical Features
+
+age:
+Slight differences in age distribution between subscribers and non-subscribers.
+Subscribers had a larger IQR, indicating a slightly wider age range.
+duration:
+Longer call durations correlate with higher subscription rates.
+Outliers suggest some very long calls for both groups.
+campaign:
+Fewer campaign interactions correlate with higher subscription rates.
+Non-subscribers had many outliers with a high number of interactions.
+pdays:
+No significant impact on subscription rates.
+Most values are clustered around 1000 days, with outliers near 0.
+euribor_3month_rate:
+Lower Euribor rates correlate with higher subscription rates.
+Non-subscribers had a higher IQR and upward skew.
+number_of_employees:
+Lower but wider IQR for subscribers.
+Non-subscribers had a tiny IQR range (~4900 to ~5300), suggesting limited impact.
+Categorical Features
+
+default:
+Individuals who have not defaulted are significantly more likely to subscribe.
+Almost no subscribers had a prior default.
+loan:
+Individuals without loans are more likely to subscribe.
+Very few subscribers had existing loans.
+contact:
+Most subscriptions came from cellular contacts.
+Telephone contacts had a much smaller subscription rate.
+poutcome:
+Most subscribers were in the "nonexistent" group (no prior outcome).
+
+---
